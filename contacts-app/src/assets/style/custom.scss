@@ -1,0 +1,37 @@
+/* src/custom.scss */
+
+// Import Bootstrap's variables
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+// Customize Bootstrap variables
+$primary: #ff6347;
+$secondary: red;
+
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$custom-primary-color: #ff6347;
+$custom-primary-text-color: #fff;
+$custom-primary-border-color: #ff6347;
+$custom-primary-hover-color: #ff6347;
+$custom-primary-hover-text-color: #000;
+$custom-primary-hover-border-color: #ff6347;
+
+.btn-custom-primary {
+  background-color: $custom-primary-color;
+  color: $custom-primary-text-color;
+  border-color: $custom-primary-border-color;
+
+  &:hover {
+    background-color: $custom-primary-hover-color;
+    color: $custom-primary-hover-text-color;
+    border-color: $custom-primary-hover-border-color;
+  }
+}
+.badge-custom {
+    border-color: $custom-primary-border-color;
+    border: 1px solid $custom-primary-color;
+    background-color: #fef7e5 !important;
+    color: $custom-primary-hover-text-color;
+}
